@@ -1,7 +1,7 @@
 # c-nstd <!-- omit from toc -->
 C non-standard library
 
-Defines a non-standard (custom) implementation for C.
+Defines a non-standard (custom) library implementation in C.
 
 ___
 
@@ -10,7 +10,7 @@ ___
 
 # Types
 
-Types in `c-nstd` are straight to the point, they follow the convention: `[<prefix>_]<base><size>[<qualifier>]_<construct>`.
+Types in `c-nstd` are straight to the point, they follow the convention: `[<prefix>_]<base><size>[<qualifier>]_<construct>`
 
 i.e. `u32c_t` would be `unsigned int const` with the `_t` denoting the entity is a primitive data type
 
@@ -23,5 +23,4 @@ i.e. `u32c_t` would be `unsigned int const` with the `_t` denoting the entity is
 `_<construct>`  | programming construct       | `_t` primitive type, `_s` struct, `_u` union, `_e` enum, `_p` pointer
 
 **Exceptions**:
- - `void *` is denoted as `v0_p`, since the size cannot be defined until compilation.
- -
+ - `void *` is denoted as `v0_p`, since the size cannot be defined until compilation
